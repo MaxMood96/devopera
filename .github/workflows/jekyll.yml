@@ -17,4 +17,4 @@ jobs:
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:2 /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+        node:10 /bin/bash -c "npm install && npm install gulp -g && apt update && apt install --yes jekyll && jekyll build"
