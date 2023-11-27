@@ -5,6 +5,6 @@
   "main": "sensortag.js",
   "dependencies": {
     "async": "0.9.0",
-    "sensortag": "0.1.11"
+    "sensortag": "1.0.0"
   }
 }
